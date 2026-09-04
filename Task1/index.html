@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizMaster | Interactive Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION BAR
+    ========================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+
+                <span class="logo-icon">Q</span>
+
+                <span>QuizMaster</span>
+
+            </a>
+
+
+            <div class="nav-links" id="nav-links">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <button
+                class="get-started-btn"
+                id="nav-start-btn">
+
+                Get Started
+
+            </button>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="menu-btn"
+                id="menu-btn">
+
+                ☰
+
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main>
+
+
+        <!-- =========================================
+             HOME SECTION
+        ========================================== -->
+
+        <section
+            id="home"
+            class="page-section home-section">
+
+            <div class="hero">
+
+
+                <div class="hero-badge">
+
+                    ✦ Test Your Knowledge
+
+                </div>
+
+
+                <h1>
+
+                    Challenge Your Mind.
+                    <br>
+
+                    <span>Expand Your Knowledge.</span>
+
+                </h1>
+
+
+                <p>
+
+                    Take interactive quizzes, test your skills,
+                    and discover how much you really know.
+
+                </p>
+
+
+                <button
+                    class="primary-btn"
+                    id="start-btn">
+
+                    Start Quiz
+                    <span>→</span>
+
+                </button>
+
+
+                <div class="hero-stats">
+
+                    <div>
+
+                        <strong>30+</strong>
+
+                        <span>Questions</span>
+
+                    </div>
+
+
+                    <div class="stat-divider"></div>
+
+
+                    <div>
+
+                        <strong>3</strong>
+
+                        <span>Categories</span>
+
+                    </div>
+
+
+                    <div class="stat-divider"></div>
+
+
+                    <div>
+
+                        <strong>100%</strong>
+
+                        <span>Free</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             ABOUT SECTION
+        ========================================== -->
+
+        <section
+            id="about"
+            class="page-section about-section">
+
+            <div class="section-content">
+
+                <div class="section-badge">
+                    About QuizMaster
+                </div>
+
+                <h2>
+                    Learn. Challenge. Improve.
+                </h2>
+
+                <p>
+
+                    QuizMaster is a simple interactive quiz
+                    application designed to make learning
+                    more enjoyable.
+
+                </p>
+
+
+                <div class="feature-grid">
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🧠
+                        </div>
+
+                        <h3>
+                            Test Your Knowledge
+                        </h3>
+
+                        <p>
+                            Challenge yourself with carefully
+                            selected questions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Instant Feedback
+                        </h3>
+
+                        <p>
+                            See immediately whether your answer
+                            is correct or incorrect.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            📊
+                        </div>
+
+                        <h3>
+                            Track Your Score
+                        </h3>
+
+                        <p>
+                            See your final score and improve
+                            your performance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CONTACT SECTION
+        ========================================== -->
+
+        <section
+            id="contact"
+            class="page-section contact-section">
+
+            <div class="contact-container">
+
+                <div class="section-badge">
+                    Contact
+                </div>
+
+                <h2>
+                    Have a Question?
+                </h2>
+
+                <p>
+                    We'd love to hear from you.
+                </p>
+
+
+                <form id="contact-form">
+
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+
+                        Send Message
+
+                    </button>
+
+
+                    <p
+                        id="contact-success"
+                        class="success-message">
+
+                    </p>
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CATEGORY SCREEN
+        ========================================== -->
+
+        <section
+            id="category-screen"
+            class="quiz-screen hidden">
+
+            <div class="category-container">
+
+
+                <div class="quiz-icon">
+                    🧠
+                </div>
+
+
+                <h2>
+                    Choose Your Category
+                </h2>
+
+
+                <p>
+                    Select a category to begin your quiz.
+                </p>
+
+
+                <div class="category-grid">
+
+
+                    <button
+                        class="category-card"
+                        data-category="web">
+
+                        <span class="category-icon">
+                            💻
+                        </span>
+
+                        <strong>
+                            Web Development
+                        </strong>
+
+                        <small>
+                            HTML & CSS
+                        </small>
+
+                    </button>
+
+
+                    <button
+                        class="category-card"
+                        data-category="javascript">
+
+                        <span class="category-icon">
+                            ⚡
+                        </span>
+
+                        <strong>
+                            JavaScript
+                        </strong>
+
+                        <small>
+                            Programming Basics
+                        </small>
+
+                    </button>
+
+
+                    <button
+                        class="category-card"
+                        data-category="general">
+
+                        <span class="category-icon">
+                            🌎
+                        </span>
+
+                        <strong>
+                            General Knowledge
+                        </strong>
+
+                        <small>
+                            Test Your Knowledge
+                        </small>
+
+                    </button>
+
+
+                </div>
+
+
+                <button
+                    class="back-btn"
+                    id="category-back">
+
+                    ← Back to Home
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             QUIZ SCREEN
+        ========================================== -->
+
+        <section
+            id="quiz-screen"
+            class="quiz-screen hidden">
+
+
+            <div class="quiz-container">
+
+
+                <!-- Quiz Top -->
+
+                <div class="quiz-top">
+
+
+                    <span id="question-number">
+                        Question 1 of 10
+                    </span>
+
+
+                    <span id="timer">
+                        ⏱ 30
+                    </span>
+
+
+                </div>
+
+
+                <!-- Progress -->
+
+                <div class="progress-container">
+
+                    <div id="progress-bar"></div>
+
+                </div>
+
+
+                <!-- Question -->
+
+                <h2 id="question">
+                    Question goes here
+                </h2>
+
+
+                <!-- Answers -->
+
+                <div
+                    id="answer-buttons"
+                    class="answers">
+
+                </div>
+
+
+                <!-- Next -->
+
+                <button
+                    id="next-btn"
+                    class="primary-btn next-btn">
+
+                    Next Question →
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             RESULT SCREEN
+        ========================================== -->
+
+        <section
+            id="result-screen"
+            class="quiz-screen hidden">
+
+
+            <div class="result-container">
+
+
+                <div class="result-icon">
+                    🏆
+                </div>
+
+
+                <h1>
+                    Quiz Completed!
+                </h1>
+
+
+                <p>
+                    Here is your final result.
+                </p>
+
+
+                <div
+                    id="final-score"
+                    class="final-score">
+
+                    0 / 10
+
+                </div>
+
+
+                <div
+                    id="percentage"
+                    class="percentage">
+
+                    0%
+
+                </div>
+
+
+                <p
+                    id="result-message"
+                    class="result-message">
+
+                    Good job!
+
+                </p>
+
+
+                <div class="result-details">
+
+
+                    <div class="result-box">
+
+                        <strong id="correct-count">
+                            0
+                        </strong>
+
+                        <span>
+                            Correct
+                        </span>
+
+                    </div>
+
+
+                    <div class="result-box">
+
+                        <strong id="wrong-count">
+                            0
+                        </strong>
+
+                        <span>
+                            Wrong
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="result-buttons">
+
+
+                    <button
+                        id="restart-btn"
+                        class="primary-btn">
+
+                        Try Again ↻
+
+                    </button>
+
+
+                    <button
+                        id="home-btn"
+                        class="secondary-btn">
+
+                        Back to Home
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+
+                <span class="logo-icon">Q</span>
+
+                QuizMaster
+
+            </div>
+
+
+            <p>
+                Learn. Challenge. Improve.
+            </p>
+
+
+            <p class="copyright">
+                © 2026 QuizMaster. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
